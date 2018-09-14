@@ -1,0 +1,41 @@
+.about
+  display: flex
+  justify-content: center
+  align-items: center
+  height: calc(100vh - 56px)
+  font-size: 2rem
+  .highlight
+    color: #3bd6c6
+    font-weight: bold
+  h1
+    font-size: 4rem
+  h3
+    font-size: 2.5rem
+  hr
+    border-width: 3px
+  .portrait
+    animation-name: fadeLeft
+    animation-duration: 1s
+  .facts
+    animation-name: fadeRight
+    animation-duration: 1s
+
+@media only screen and (max-width: 600px)
+  .about
+    display: block
+
+@keyframes fadeLeft
+  0%
+    opacity: 0
+    transform: translateX(-200px)
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes fadeRight
+  0%
+    opacity: 0
+    transform: translateX(200px)
+  100%
+    opacity: 1
+    transform: translateX(0px)

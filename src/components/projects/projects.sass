@@ -1,0 +1,61 @@
+.projects
+  display: flex
+  align-items: center
+  justify-content: center
+  height: calc(100vh - 56px)
+  font-size: 1.7rem
+  Button
+    background: transparent
+    border-radius: 0
+    border: 2px solid white
+    color: #FFF
+    font-size: 2rem
+    margin: 5px 0 5px 0
+  h3
+    padding: 0
+    margin: 0
+  .fade-in
+    animation-name: fadeIn
+    animation-duration: 2s
+  .luxuvityProject
+    animation-name: fadeLeft
+    animation-duration: 1s
+  .pokeProject
+    animation-name: fadeRight
+    animation-duration: 1s
+  .highlight
+    color: #3bd6c6
+    font-weight: bold
+  h1
+    text-align: center
+    font-size: 4rem
+  hr
+    max-width: 100px
+    border-width: 3px
+    border-color: #fff
+
+@media only screen and (max-width: 600px)
+  .projects
+    display: block
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes fadeLeft
+  0%
+    opacity: 0
+    transform: translateX(-200px)
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes fadeRight
+  0%
+    opacity: 0
+    transform: translateX(200px)
+  100%
+    opacity: 1
+    transform: translateX(0px)

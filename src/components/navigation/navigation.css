@@ -1,0 +1,24 @@
+.navbar {
+  background: transparent;
+  border: none;
+  margin: 0; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+    .navbar .navbar-nav a {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff; }
+  .navbar .navbar-collapse {
+    text-align: center; }
+    .navbar .navbar-collapse ul li a {
+      color: white; }
+    .navbar .navbar-collapse ul li a:hover {
+      color: #3bd6c6; }
+    .navbar .navbar-collapse ul li a:active {
+      color: #3bd6c6; }
+    .navbar .navbar-collapse ul li a:focus {
+      color: #3bd6c6; }

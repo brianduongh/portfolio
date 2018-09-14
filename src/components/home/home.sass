@@ -1,0 +1,113 @@
+@function multiple-box-shadow ($n)
+  $value: '#{random(2000)}px #{random(2000)}px #FFF'
+  @for $i from 2 through $n
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF'
+
+  @return unquote($value)
+
+$shadows-small:  multiple-box-shadow(700)
+$shadows-medium: multiple-box-shadow(200)
+$shadows-big:    multiple-box-shadow(100)
+.home
+  height: calc(100vh - 56px)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  .intro
+    font-size: 4rem
+    animation-name: fadeIn
+    animation-duration: 1s
+    .highlight
+      color: #3bd6c6
+      font-weight: bold
+  .icons
+    font-size: 4rem
+    animation-name: fadeIn
+    animation-duration: 1s
+    a
+      color: #fff
+    a:hover
+      color: #3bd6c6
+    a:active
+      color: #3bd6c6
+    a:focus
+      color: #3bd6c6
+    i
+      padding: 0px 1.2rem
+.stars
+  width: 1px
+  height: 1px
+  background: transparent
+  box-shadow: $shadows-small
+  animation			: animStar 50s linear infinite
+
+  &:after
+    content: " "
+    position: absolute
+    top: 100vh
+    width: 1px
+    height: 1px
+    background: transparent
+    box-shadow: $shadows-small
+
+.stars2
+  width: 2px
+  height: 2px
+  background: transparent
+  box-shadow: $shadows-medium
+  animation			: animStar 100s linear infinite
+
+  &:after
+    content: " "
+    position: absolute
+    top: 100vh
+    width: 2px
+    height: 2px
+    background: transparent
+    box-shadow: $shadows-medium
+
+.stars3
+  width: 3px
+  height: 3px
+  background: transparent
+  box-shadow: $shadows-big
+  animation			: animStar 150s linear infinite
+
+  &:after
+    content: " "
+    position: absolute
+    top: 100vh
+    width: 3px
+    height: 3px
+    background: transparent
+    box-shadow: $shadows-big
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes fadeLeft
+  0%
+    opacity: 0
+    transform: translateX(-100px)
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes fadeRight
+  0%
+    opacity: 0
+    transform: translateX(100px)
+  100%
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes animStar
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-100vh)
