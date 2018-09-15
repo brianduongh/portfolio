@@ -2,36 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 56px);
-  text-align: center; }
-  .contact .contact-form {
-    margin: 10px;
-    animation-name: Pop;
-    animation-duration: 1s; }
-    .contact .contact-form .highlight {
-      color: #3bd6c6;
-      font-weight: bold; }
-    .contact .contact-form Button {
-      background: transparent;
-      border-radius: 0;
-      border: 2px solid white;
-      color: #FFF;
-      font-size: 2rem;
-      margin: 5px; }
+  height: 100%;
+  text-align: center;
+  padding: 5rem 0 5rem 0;
+  background: black;
+  margin: 10px;
+  animation-name: Pop;
+  animation-duration: 1s;
+  font-size: 2.5rem; }
+  .contact .highlight {
+    color: #3bd6c6;
+    font-weight: bold; }
   .contact h1 {
     font-size: 4rem; }
-  .contact input {
-    border-radius: 0;
-    margin-bottom: 5px;
-    border: solid 2px #3bd6c6; }
-  .contact textarea {
-    border-radius: 0;
-    margin-bottom: 5px;
-    border: solid 2px #3bd6c6; }
   .contact hr {
     max-width: 100px;
     border-width: 3px;
     border-color: #fff; }
+  .contact .container .row {
+    margin: 20px 0; }
 
 @keyframes Pop {
   0% {

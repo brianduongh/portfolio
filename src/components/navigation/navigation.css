@@ -1,24 +1,33 @@
 .navbar {
-  background: transparent;
-  border: none;
+  background: black;
+  border-bottom: solid 2px #3bd6c6;
   margin: 0; }
   .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top; }
     .navbar .navbar-nav a {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 10px;
       font-size: 20px;
       text-transform: uppercase;
       color: #fff; }
+    .navbar .navbar-nav a:hover {
+      color: #3bd6c6;
+      text-decoration: none; }
+    .navbar .navbar-nav a:active {
+      color: #3bd6c6; }
+    .navbar .navbar-nav a:focus {
+      color: #3bd6c6; }
   .navbar .navbar-collapse {
-    text-align: center; }
-    .navbar .navbar-collapse ul li a {
-      color: white; }
-    .navbar .navbar-collapse ul li a:hover {
-      color: #3bd6c6; }
-    .navbar .navbar-collapse ul li a:active {
-      color: #3bd6c6; }
-    .navbar .navbar-collapse ul li a:focus {
-      color: #3bd6c6; }
+    text-align: center;
+    padding-top: 10px; }
+    .navbar .navbar-collapse ul li {
+      display: inline; }
+      .navbar .navbar-collapse ul li a {
+        color: white; }
+      .navbar .navbar-collapse ul li a:hover {
+        color: #3bd6c6; }
+      .navbar .navbar-collapse ul li a:active {
+        color: #3bd6c6; }
+      .navbar .navbar-collapse ul li a:focus {
+        color: #3bd6c6; }

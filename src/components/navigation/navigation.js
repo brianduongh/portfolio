@@ -1,29 +1,30 @@
 import React from 'react';
 import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import './navigation.css';
 
 const NavigationBar = () => (
-  <Navbar>
+  <Navbar fixedTop>
     <Navbar.Header>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavItem href="/">
+        <Link activeClass="active" to="home" spy smooth offset={-50} duration={500}>
           Home
-        </NavItem>
-        <NavItem href="/about">
+        </Link>
+        <Link activeClass="active" to="about" spy smooth offset={-50} duration={500}>
           About
-        </NavItem>
-        <NavItem href="/skills">
+        </Link>
+        <Link activeClass="active" to="skills" spy smooth offset={-50} duration={500}>
           Skills
-        </NavItem>
-        <NavItem href="/projects">
+        </Link>
+        <Link activeClass="active" to="projects" spy smooth offset={-50} duration={500}>
           Projects
-        </NavItem>
-        <NavItem href="/contact">
+        </Link>
+        <Link activeClass="active" to="contact" spy smooth offset={-50} duration={500}>
           Contact
-        </NavItem>
+        </Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
