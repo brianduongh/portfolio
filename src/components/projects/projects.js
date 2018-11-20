@@ -36,7 +36,7 @@ class Projects extends Component {
   }
 
   openTrivia() {
-    window.open('https://github.com/brianduongh/TrivaGame')
+    window.open('https://github.com/brianduongh/TriviaGame')
   }
 
   openRPG() {
