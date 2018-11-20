@@ -23,7 +23,8 @@
     animation-duration: 1s; }
   .projects .pokeProject {
     animation-name: fadeRight;
-    animation-duration: 1s; }
+    animation-duration: 1s;
+    margin-top: 10px; }
   .projects .highlight {
     color: #3bd6c6;
     font-weight: bold; }

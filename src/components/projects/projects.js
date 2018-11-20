@@ -6,6 +6,8 @@ import Luxuvity from '../../images/Luxuvity.jpg';
 import PokeLogo from '../../images/PokeLogo.png';
 import LuxuvityWeb from '../../images/WebExample.png';
 import LuxuvityMobile from '../../images/mobileExample.png';
+import Grounds from '../../images/grounds.png';
+import Longhorn from '../../images/longhorn.png';
 
 class Projects extends Component {
   constructor(props, context) {
@@ -27,6 +29,26 @@ class Projects extends Component {
 
   pokeGithub() {
     window.open('https://github.com/brianduongh/pokeApp');
+  }
+
+  openGrounds() {
+    window.open('https://github.com/brianduongh/Project_1')
+  }
+
+  openTrivia() {
+    window.open('https://github.com/brianduongh/TrivaGame')
+  }
+
+  openRPG() {
+    window.open('https://github.com/brianduongh/unit-game-4')
+  }
+
+  openGuess() {
+    window.open('https://github.com/brianduongh/Word-Guess-Game')
+  }
+
+  openGifs() {
+    window.open('https://github.com/brianduongh/Giftastic')
   }
 
   render() {
@@ -74,6 +96,32 @@ class Projects extends Component {
               </Col>
               <Col md={4}>
                 <Image className="pokeGithub" src={PokeLogo} responsive />
+              </Col>
+            </Row>
+            <Row className="luxuvityProject">
+              <Col md={4}>
+                <Image src={Grounds} responsive />
+              </Col>
+              <Col md={8}>
+                <h3>Grounds</h3>
+                <h4>Front-End Dev/Project Manager</h4>
+Mobile responsive web application built to provide a platform that connects local businesses & restaurants looking to get rid of their coffee grounds and people looking to recycle and fertalize those grounds.                 <br />
+                <Button onClick={this.openGrounds}>GitHub</Button>
+              </Col>
+            </Row>
+            <Row className="pokeProject">
+              <Col md={8}>
+                <h3>UT Bootcamp Projects</h3>
+                <h4>JavaScript/Jquery games</h4>
+                  These are a few games I built at UT's Full-Stack bootcamp. These games show utilization of jQuery, Javascript, HTML, APIs, and CSS.
+                <br />
+                <Button onClick={this.openTrivia}>Trivia</Button>
+                <Button onClick={this.openGuess}>Hangman</Button>
+                <Button onClick={this.openRPG}>Pokemon RPG</Button>
+                <Button onClick={this.openGifs}>Gif Generator</Button>
+              </Col>
+              <Col md={4}>
+                <Image className="pokeGithub" src={Longhorn} responsive />
               </Col>
             </Row>
           </Grid>
