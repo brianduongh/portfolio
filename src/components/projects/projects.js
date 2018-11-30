@@ -55,6 +55,9 @@ class Projects extends Component {
     window.open('https://github.com/brianduongh/liriBot')
   }
 
+  openBamazon() {
+    window.open('https://github.com/brianduongh/bamazon')
+  }
 
   render() {
     const { show } = this.state;
@@ -120,6 +123,7 @@ Mobile responsive web application built to provide a platform that connects loca
                 <h4>JavaScript/Jquery games</h4>
                   These are a few games I built at UT's Full-Stack bootcamp. These games show utilization of jQuery, Javascript, HTML, APIs, and CSS.
                 <br />
+                <Button onClick={this.openBamazon}>Bamazon</Button>
                 <Button onClick={this.openLiri}>LiriBot</Button>
                 <Button onClick={this.openTrivia}>Trivia</Button>
                 <Button onClick={this.openGuess}>Hangman</Button>
